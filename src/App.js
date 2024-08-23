@@ -1,4 +1,4 @@
-import { Container, Content, Row} from "./styles";
+import { Container, Content, Row } from "./styles";
 import Input from "./components/input";
 import Button from "./components/button";
 import { useState } from "react";
@@ -79,7 +79,7 @@ const App = () => {
         case "x":
           handleMultNumbers();
           break;
-        
+
         case "/":
           handleDivNumbers();
           break;
@@ -110,12 +110,12 @@ const App = () => {
           <Button label="1" onClick={() => handleAddNumber("1")} />
           <Button label="2" onClick={() => handleAddNumber("2")} />
           <Button label="3" onClick={() => handleAddNumber("3")} />
-          <Button label="+" onClick={handleSumNumbers} />
+          <Button label="+" onClick={() => handleSumNumbers()} />
         </Row>
         <Row>
           <Button label="c" onClick={handleClear} />
           <Button label="0" onClick={() => handleAddNumber("0")} />
-          <Button label="/" onClick={handleMultNumbers} />
+          <Button label="÷" onClick={handleDivNumbers} />
           <Button label="=" onClick={handleEquals} />
         </Row>
       </Content>

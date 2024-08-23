@@ -11,3 +11,7 @@ h1{
     font-size: 3em;
     font-family: 'Arial';
 }
+
+@media screen and (max-widht: 500px){
+    
+}
